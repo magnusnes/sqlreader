@@ -7,9 +7,9 @@
 read_sql_file(filsti, params = NULL)
 }
 \arguments{
-\item{filsti}{`character/path``. Må angi en fil med endelse .sql eller .SQL.}
+\item{filsti}{`character/path``. Maa angi en fil med endelse .sql eller .SQL.}
 
-\item{params}{\code{list}. Parameteren er valgfri, men må inneholde en nangitt
+\item{params}{\code{list}. Parameteren er valgfri, men maa inneholde en nangitt
 liste med parametere som korresponderer med de i sql-filen.
 (A list with the parameters in the corresponding sql file.}
 }
@@ -17,17 +17,17 @@ liste med parametere som korresponderer med de i sql-filen.
 \code{character}. Returnerer SQL i filstien.
 }
 \description{
-Leser innholdet fra en SQL-fil. Filen må være en .sql fil.
+Leser innholdet fra en SQL-fil. Filen maa vaere en .sql fil.
 }
 \section{Parametrisering}{
 
 
-SQL-filen kan inneholde parametere. Disse må være kodet som
+SQL-filen kan inneholde parametere. Disse ma vaere kodet som
 \verb{\{params$<params-navn>\}}, f.eks \code{{params$kalkulasjon}}. Disse angis som input
 til funksjonen som en navngitt liste, f.eks
 \code{list(kalkulasjon = "'B MND SBM'")}. Parametriseringen bruker \code{glue} som
-motor, som evaluering av et parameter verdien må gi det innskuddet i filen
-som filen behøver. I eksempelet over innføres en tekstparameter i filen.
+motor, som evaluering av et parameter verdien maa gi det innskuddet i filen
+som filen behoever. I eksempelet over innfoeres en tekstparameter i filen.
 Dersom vi skulle sende inn en dato kunne vi gjort slik:
 \code{list(kalkulasjonsdato = "TODATE('2023-01-01','YYYY-MM-DD')")}.
 }
